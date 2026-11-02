@@ -43,20 +43,78 @@ footer .wrap{padding:18px 0 26px;display:flex;justify-content:space-between;gap:
 .pixel-hearts{text-align:center;color:#db559e;letter-spacing:.25em;font-size:1rem;margin:4px 0 12px}
 @media(max-width:720px){.site-shell{margin:12px 9px 22px;box-shadow:0 0 0 3px #efdcff,0 0 0 5px #592e82}.window-body{display:block}.sidebar{border-right:0;border-bottom:2px solid #b889d4;padding:9px 14px}.sidebar-art,.sidebar-bottom{display:none}.sidebar-nav{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}.sidebar-nav a{padding:3px 0;border:0;font-size:.77rem}.wrap{width:calc(100% - 32px)}.hero{padding:25px 0}.hero h1{font-size:clamp(2rem,8vw,3rem)}.section{padding:28px 0}.section-header{display:block}.section-sub{max-width:none}.entry{grid-template-columns:37px 1fr;gap:8px}.entry-no{font-size:.9rem}.recipe-mark{font-size:1.15rem}.about-grid{grid-template-columns:1fr;gap:5px}.window-bar{font-size:.77rem;padding:7px 10px}.window-controls span{width:18px;height:18px;line-height:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Match the reference composition: compact, image-first, retro window */
+.site-shell{max-width:1050px}
+.window-body{grid-template-columns:195px minmax(0,1fr)}
+.sidebar{padding:16px;background:#ecd1ff}
+.sidebar-art{min-height:225px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.sidebar-art .sprite{font-size:4.6rem}
+.sidebar-nav a{font-size:1.03rem}
+.wrap{width:calc(100% - 54px)}
+.hero{padding:16px 0 14px}
+.hero-layout{display:flex;flex-direction:column;gap:0}
+.hero-layout>div:first-child{display:contents}
+.pixel-hearts{white-space:nowrap;overflow:hidden;margin:0 0 12px;font-size:.95rem}
+.kicker{display:none}
+.hero h1{font:bold clamp(2rem,4.6vw,3.6rem)/1.1 Georgia,serif;text-align:center;margin:8px 0 9px}
+.hero h1 em{font-style:normal}
+.tagline{order:0;text-align:center;align-self:center;background:#fff6bd;padding:2px 13px;margin:0 0 16px;font:bold italic 1.15rem Georgia,serif}
+.kitchen-photo{order:1;margin:0 auto 16px;max-width:none;width:100%;transform:none;box-shadow:none;padding:6px}
+.kitchen-photo img{aspect-ratio:2.65/1;object-fit:cover;object-position:center 50%}
+.kitchen-photo figcaption{display:none}
+.hero .intro{order:2;font-size:.92rem;line-height:1.43;max-width:none;font-weight:bold}
+.hero .intro p{margin:0}
+.hero .intro p+p{display:none}
+.primary-link{display:none}
+.gingham-rule{display:none}
+.section{padding:12px 0 26px}
+.section-header{display:block;margin-bottom:13px}
+.eyebrow,.section-sub{display:none}
+.section-title{font:bold clamp(1.13rem,2.4vw,1.55rem) "Courier New",monospace;background:#ffd6eb;color:#65218a;display:inline-block;padding:5px 12px;border-radius:10px;margin:0}
+.entry{grid-template-columns:65px 1fr;gap:9px;padding:12px 0;border:0}
+.entry:last-child{border:0}
+.entry-no{font-size:0}
+.recipe-mark{font-size:2.4rem;transform:none}
+.entry h3{font:bold clamp(.99rem,1.9vw,1.22rem)/1.3 "Courier New",monospace;letter-spacing:-.02em;text-decoration:underline;color:#71278b;margin:0 0 5px}
+.entry:first-of-type h3:before{content:"001 — "}
+.entry:nth-of-type(2) h3:before{content:"002 — "}
+.entry p{font-size:.86rem;font-weight:bold;line-height:1.4;margin:0 0 8px}
+.meta,.field-note{display:none}
+details{margin-top:5px}
+summary{font-size:.77rem}
+.about{padding:24px 0}
+.bottom-hearts{color:#e04a97;text-align:center;letter-spacing:.15em;white-space:nowrap;overflow:hidden;padding:9px}
+@media(max-width:720px){
+.window-body{display:block}
+.sidebar{padding:8px 12px}
+.sidebar-art,.sidebar-bottom{display:none}
+.sidebar-nav{flex-direction:row;justify-content:center;flex-wrap:wrap;gap:12px}
+.sidebar-nav a{font-size:.76rem;padding:3px 0;border:0}
+.wrap{width:calc(100% - 30px)}
+.hero{padding:12px 0 10px}
+.hero h1{font-size:clamp(1.7rem,7vw,2.7rem)}
+.tagline{font-size:.93rem}
+.kitchen-photo img{aspect-ratio:1.85/1}
+.entry{grid-template-columns:42px 1fr;gap:6px}
+.recipe-mark{font-size:1.6rem}
+.entry h3{font-size:.94rem}
+.entry p{font-size:.8rem}
+}
 </style>
 </head>
 <body>
-<div class="site-shell"><div class="window-bar"><span>✧ Best Frozen Veggies ✧</span><div class="window-controls" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div></div><div class="window-body"><aside class="sidebar"><div class="sidebar-art"><div class="sprite" aria-hidden="true">✧ 🪽 ✧</div><small>~ welcome to my little corner of the web ~</small></div><nav class="sidebar-nav" aria-label="Main"><a href="#">Home</a><a href="#recipes">Recipes</a><a href="#about">Kitchen notes</a></nav><div class="sidebar-bottom" aria-hidden="true">✦ 🐈 ✦</div></aside><div class="main-pane">
+<div class="site-shell"><div class="window-bar"><span>✧ Best Frozen Veggies ✧</span><div class="window-controls" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div></div><div class="window-body"><aside class="sidebar"><div class="sidebar-art"><div class="sprite" aria-hidden="true">🧚🏻‍♀️</div><small>~ welcome to my little corner of the web ~</small></div><nav class="sidebar-nav" aria-label="Main"><a href="#">Home</a><a href="#recipes">Recipes</a><a href="#about">Kitchen notes</a></nav><div class="sidebar-bottom" aria-hidden="true">✦ 🐈 ✦</div></aside><div class="main-pane">
 <header class="site-head"><div class="wrap"><a class="brand" href="#">Best Frozen Veggies <span aria-hidden="true">✳</span></a><nav class="nav" aria-label="Main"><a href="#recipes">Recipes</a><a href="#about">About</a></nav></div></header>
 <main>
 <section class="hero"><div class="wrap hero-layout"><div>
 <div class="pixel-hearts" aria-hidden="true">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</div><div class="kicker">✧ A tiny kitchen website · Est. 2026 ✧</div>
-<h1>♥ Best Frozen Veggies ♥</h1><p style="text-align:center;background:#fff8c8;max-width:max-content;margin:5px auto 12px;padding:0 12px;font-style:italic">Good things from the freezer.</p>
+<h1>💗 Best Frozen Veggies 💗</h1><p class="tagline">Good things from the freezer.</p>
 <div class="intro"><p>Frozen vegetables are convenient, affordable, and occasionally a little sad. I'm figuring out how to make them better.</p><p>Small experiments. Ordinary ingredients. Honest notes on what actually happened in the pan.</p></div>
 <a class="primary-link" href="#recipes">Explore the recipes <span aria-hidden="true">↗</span></a>
 </div><figure class="kitchen-photo"><img src="kitchen-web.jpg" alt="A cozy kitchen corner with sunflowers, red gingham, and collected everyday objects" loading="eager"><figcaption>From the kitchen notebook.</figcaption></figure></div></section><div class="gingham-rule" aria-hidden="true"></div>
 <section class="section" id="recipes"><div class="wrap">
-<div class="section-header"><div><div class="eyebrow">✦ Updated whenever I cook something good ✦</div><h2 class="section-title">★ Recent Experiments ★</h2></div><div class="section-sub">Both recipes have been tested once. They're works in progress, and that's part of the point.</div></div>
+<div class="section-header"><div><div class="eyebrow">✦ Updated whenever I cook something good ✦</div><h2 class="section-title">✦ Recent Experiments ✦</h2></div></div>
 <article class="entry"><div class="entry-no">01 <span class="recipe-mark" aria-hidden="true">🌽</span></div><div>
 <div class="meta">Skillet study · Tested once</div><h3>Skillet corn with paprika &amp; vinegar</h3>
 <p>Sweet, savory, a little tangy. The first batch tasted good. The oil measurement was less successful.</p>
@@ -81,4 +139,4 @@ footer .wrap{padding:18px 0 26px;display:flex;justify-content:space-between;gap:
 <section class="about" id="about"><div class="wrap about-grid"><div><div class="note-label">A note from the kitchen</div><h2>Why frozen veggies?</h2><div class="margin-note">A very small obsession<br>with a very ordinary food.</div></div><div><p>I think eating more vegetables should be easy, affordable, and genuinely enjoyable.</p><p>Frozen vegetables last a long time and require almost no planning. But there's a difference between vegetables that are merely convenient and vegetables you're excited to eat.</p><p>I'm testing small changes and sharing what works, what doesn't, and what I'm still figuring out. Think of this as a public kitchen notebook. You're welcome to cook along.</p></div></div></section>
 </main>
 <footer><div class="wrap"><span>Best Frozen Veggies · Made in a real kitchen, one bag at a time.</span><a href="https://github.com/AliciaRaeWelden/best-frozen-veggies">See the ongoing experiments ↗</a></div></footer>
-</div></div></div></body></html>
+<div class="bottom-hearts" aria-hidden="true">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</div></div></div></div></body></html>
