@@ -71,20 +71,27 @@ footer a{color:var(--wine)}
 .about-grid{grid-template-columns:1fr;gap:12px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(200px,.8fr);gap:40px;align-items:center}
+.kitchen-photo{margin:0;background:#eee6d9;padding:8px;transform:rotate(1.2deg);box-shadow:4px 7px 18px #322b2718}
+.kitchen-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.kitchen-photo figcaption{font:italic .8rem Georgia,serif;color:#776c64;padding:9px 4px 2px}
+.gingham-rule{height:9px;background:repeating-linear-gradient(90deg,#aa534b35 0 9px,transparent 9px 18px),repeating-linear-gradient(0deg,#aa534b22 0 5px,transparent 5px 10px);background-color:#fff5ed}
+.recipe-mark{font-family:Georgia,serif;color:#773b37;font-size:1.2rem;display:inline-block;transform:rotate(-12deg)}
+@media(max-width:640px){.hero-layout{grid-template-columns:1fr;gap:26px}.kitchen-photo{max-width:320px}}
 </style>
 </head>
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="#">Best Frozen Veggies <span aria-hidden="true">✳</span></a><nav class="nav" aria-label="Main"><a href="#recipes">Recipes</a><a href="#about">About</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap">
+<section class="hero"><div class="wrap hero-layout"><div>
 <div class="kicker">Field notes from a home kitchen / No. 001</div>
 <h1>Good things from <em>the freezer.</em><span class="doodle" aria-hidden="true">✳</span></h1>
 <div class="intro"><p>Frozen vegetables are convenient, affordable, and occasionally a little sad. I'm figuring out how to make them better.</p><p>Small experiments. Ordinary ingredients. Honest notes on what actually happened in the pan.</p></div>
 <a class="primary-link" href="#recipes">Explore the recipes <span aria-hidden="true">↗</span></a>
-</div></section>
+</div><figure class="kitchen-photo"><img src="assets/kitchen.jpg" alt="A real corner of the kitchen where these experiments began"><figcaption>From the kitchen notebook.</figcaption></figure></div></section><div class="gingham-rule" aria-hidden="true"></div>
 <section class="section" id="recipes"><div class="wrap">
 <div class="section-header"><div><div class="eyebrow">The kitchen notebook</div><h2 class="section-title">Two experiments, so far.</h2></div><div class="section-sub">Both recipes have been tested once. They're works in progress, and that's part of the point.</div></div>
-<article class="entry"><div class="entry-no">01 <span aria-hidden="true">↗</span></div><div>
+<article class="entry"><div class="entry-no">01 <span class="recipe-mark" aria-hidden="true">✳</span></div><div>
 <div class="meta">Skillet study · Tested once</div><h3>Skillet corn with paprika &amp; vinegar</h3>
 <p>Sweet, savory, a little tangy. The first batch tasted good. The oil measurement was less successful.</p>
 <p class="field-note"><strong>What I learned:</strong> Cook off the water first; measure the oil next time.</p>
@@ -94,7 +101,7 @@ footer a{color:var(--wine)}
 <p class="small"><strong>First-trial note:</strong> The corn was good but a bit oily. The oil quantity wasn't measured carefully. Timing and amounts remain provisional.</p>
 <a href="https://github.com/AliciaRaeWelden/best-frozen-veggies/blob/main/recipes/skillet-corn.md">Read the full notebook entry ↗</a>
 </div></details></div></article>
-<article class="entry"><div class="entry-no">02 <span aria-hidden="true">↗</span></div><div>
+<article class="entry"><div class="entry-no">02 <span class="recipe-mark" aria-hidden="true">✳</span></div><div>
 <div class="meta">Skillet study · Tested once</div><h3>Pan-browned mixed vegetables</h3>
 <p>A better texture for the everyday freezer mix. The trick is getting rid of the water before asking the vegetables to brown.</p>
 <p class="field-note"><strong>What I learned:</strong> Moisture matters. Seasoning still needs a little work.</p>
