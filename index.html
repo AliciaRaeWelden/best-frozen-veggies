@@ -156,6 +156,19 @@ summary{font-size:.72rem;padding:3px 7px}
 .mini-sparkles{color:#d25a96;font-size:.9rem;margin-top:3px}
 .site-shell:before{display:none}
 }
+
+/* Fix mobile: the inherited desktop sidebar min-height created the empty lavender panel. */
+@media(max-width:720px){
+.sidebar{display:block!important;min-height:0!important;height:auto!important;padding:7px 10px!important}
+.sidebar-nav{display:flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap!important;gap:8px 16px!important}
+.sidebar-art,.sidebar-bottom{display:none!important}
+.mobile-dollz{display:flex!important;min-height:0!important;height:auto!important;max-height:88px!important;padding:5px 10px!important;gap:8px!important;overflow:hidden}
+.mobile-dollz .doll-sprite{width:55px!important;height:66px!important}
+.mobile-dollz .cat-sprite{width:52px!important;height:48px!important}
+.mobile-dollz-copy{font-size:.6rem!important}
+.main-pane{min-width:0}
+.hero{padding-top:5px!important}
+}
 </style>
 </head>
 <body>
