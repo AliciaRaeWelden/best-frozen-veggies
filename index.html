@@ -181,6 +181,34 @@ summary{font-size:.72rem;padding:3px 7px}
 .card-transcript h4{margin:12px 0 5px;color:#70278c}.card-transcript ul,.card-transcript ol{padding-left:22px;margin:5px 0 12px}.card-transcript li{margin:4px 0}
 .card-footnote,.recipe-box-foot{font-size:.74rem;color:#775b85}.recipe-box-foot{text-align:center;margin:24px 0 0}
 @media(max-width:720px){.recipe-box{padding:24px 0}.recipe-box-heading h2{font-size:1.08rem;margin:0 4px}.index-card{padding:18px 17px}.index-card h3{font-size:1.55rem}.recipe-box-intro{font-size:.78rem}}
+
+/* Original recipe-card presentation, with a faithful photo slot and a decorative fallback */
+.handmade-recipe{max-width:760px;margin:0 auto}
+.original-card{position:relative;background:#fff9f3;border:3px double #8c36a7;padding:6px;box-shadow:3px 4px 0 #d5a6e7}
+.original-card-link:not(.has-original){display:none}
+.original-card-link img{display:block;width:100%;height:auto}
+.original-card:has(.has-original) .card-art-fallback{display:none}
+.card-art-fallback{position:relative;overflow:hidden;min-height:290px;aspect-ratio:1.88/1;background:#fff9f4;border:1px solid #e6c8d4}
+.swirl-art{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.handwriting{position:absolute;inset:12% 12% 14% 16%;display:flex;flex-direction:column;justify-content:space-around;font:clamp(1.4rem,5vw,2.7rem)/1.06 "Comic Sans MS","Segoe Print",cursive;color:#302448;transform:rotate(-3deg);z-index:2}
+.handwriting span:nth-child(2){padding-left:6%}.handwriting span:nth-child(3){padding-left:8%}
+.card-stickers .sticker{position:absolute;z-index:3;font-size:clamp(1.7rem,5vw,3.4rem);filter:drop-shadow(2px 2px #b68cbd)}
+.card-stickers .pirate{right:22%;top:7%}.card-stickers .deer{left:2%;bottom:4%}.card-stickers .puffin{right:4%;bottom:5%}
+.confetti{position:absolute;right:0;bottom:0;width:48%;height:48%;background-image:radial-gradient(#ad479d 1.2px,transparent 1.5px),radial-gradient(#55985b 1.2px,transparent 1.5px),radial-gradient(#e66b7e 1.2px,transparent 1.5px);background-size:17px 16px,21px 20px,25px 22px;background-position:0 0,7px 9px,12px 4px;mask-image:linear-gradient(130deg,transparent 10%,black 70%);opacity:.85}
+.recipe-window{margin-top:19px;border:3px double #8b39ac;background:#fffefa;box-shadow:3px 4px #d7a9e7}
+.recipe-window>summary{display:block;cursor:pointer;background:#edcefa;color:#60237d;border:0;padding:10px 14px;font:bold 1rem "Courier New",monospace;text-decoration:none}
+.recipe-window>summary:after{content:"  ▣  ×";float:right}
+.recipe-window-content{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:15px 19px}
+.recipe-window-column+.recipe-window-column{border-left:2px dotted #caa2dd;padding-left:18px}
+.recipe-window h4{font:bold 1rem "Courier New",monospace;color:#82218e;margin:7px 0}
+.recipe-window p,.recipe-window li{font-size:.86rem;line-height:1.45}
+.recipe-window ul{margin:6px 0;padding-left:20px}
+.recipe-window li{margin:4px 0}
+.recipe-highlight{background:#fff5bc;border-radius:8px;padding:8px;font-style:italic}
+.recipe-window .card-footnote{padding:0 18px 10px;margin:0}
+.back-card a:not(.has-original){display:none}
+.back-card img{width:min(100% - 30px,570px);display:block;margin:5px auto 20px;border:1px solid #d9a4dc}
+@media(max-width:720px){.card-art-fallback{min-height:0;aspect-ratio:1.6/1}.handwriting{font-size:clamp(1.15rem,5.5vw,2rem)}.recipe-window-content{grid-template-columns:1fr;gap:5px;padding:12px}.recipe-window-column+.recipe-window-column{border-left:0;border-top:2px dotted #caa2dd;padding:8px 0 0}.recipe-window>summary{font-size:.88rem}}
 </style>
 </head>
 <body>
@@ -219,7 +247,21 @@ summary{font-size:.72rem;padding:3px 7px}
 <section class="recipe-box" id="recipe-box"><div class="wrap">
 <div class="recipe-box-heading"><span aria-hidden="true">♡ ✧ ♡</span><h2>From the Recipe Box</h2><span aria-hidden="true">♡ ✧ ♡</span></div>
 <p class="recipe-box-intro">A collection of handwritten, sticker-covered recipes from my kitchen. A little messy, very real.</p>
-<article class="index-card"><div class="index-card-art" aria-hidden="true"><span>✿</span><span>♡</span><span>✧</span></div><div class="index-card-inner"><div class="card-date">March 16, 2026 · Handwritten recipe no. 01</div><h3>The Big LeBroc-ski<br>Cashew Alfredo</h3><p class="card-note">Rotini, broccoli, and a creamy cashew sauce. Leftovers were great; might use less salt next time.</p><details><summary>♡ Open the recipe card</summary><div class="card-transcript"><h4>Ingredients</h4><ul><li>½ cup raw cashews</li><li>¾ cup hot water (boiling water used)</li><li>1 tbsp nutritional yeast (nooch)</li><li>½ tsp garlic powder</li><li>½ tsp salt</li><li>1 tsp lemon juice or apple cider vinegar</li><li>Black pepper, to taste</li><li>Optional: ½ tsp mustard for “mac + cheese vibes”</li></ul><h4>Method</h4><ol><li>Soak cashews in boiling water for 10 minutes.</li><li>Blend the sauce ingredients until smooth.</li><li>Mix with rotini and broccoli.</li></ol><p><strong>Handwritten note:</strong> “Leftovers were great. Was a little salty / might dilute.”</p><p class="card-footnote">Transcribed from the original handwritten index card. Pasta and broccoli quantities weren't specified.</p></div></details></div></article>
+<article class="handmade-recipe">
+<div class="original-card">
+<a class="original-card-link" href="lebrocski-front.jpg" target="_blank" rel="noopener" aria-label="View the original handwritten LeBroc-ski recipe card larger" onclick="if(this.querySelector('img').hidden){event.preventDefault()}"><img src="lebrocski-front.jpg" alt="Original handwritten title card: The Big LeBroc-ski Cashew Alfredo, with purple swirls, multicolored dots, and playful animal stickers" loading="lazy" hidden onload="this.hidden=false;this.parentElement.classList.add('has-original')" onerror="this.hidden=true"></a>
+<div class="card-art-fallback" aria-label="Illustrated recreation of the handwritten card while the original photograph is being added">
+<svg class="swirl-art" viewBox="0 0 640 330" preserveAspectRatio="none" aria-hidden="true"><path d="M75 15 C-15 65 28 135 95 116 S265 85 295 70 S400 52 400 10 M210 285 C300 350 355 220 430 245 S570 300 610 140" fill="none" stroke="#a35baa" stroke-width="2.8"/><path d="M560 0 Q520 70 585 105 Q630 130 600 210" fill="none" stroke="#a35baa" stroke-width="2"/></svg>
+<div class="card-stickers"><span class="sticker pirate" aria-label="pirate dog sticker">🐕‍🦺</span><span class="sticker deer" aria-label="deer sticker">🦌</span><span class="sticker puffin" aria-label="puffin sticker">🐧</span></div>
+<div class="handwriting"><span>The Big</span><span>LeBroc-ski</span><span>Cashew Alfredo</span></div><div class="confetti" aria-hidden="true"></div>
+</div>
+</div>
+<details class="recipe-window"><summary>♡ Recipe details <span aria-hidden="true">✧</span></summary>
+<div class="recipe-window-content"><div class="recipe-window-column"><h4>♡ Ingredients</h4><ul><li>½ cup raw cashews</li><li>¾ cup hot water (I used boiling)</li><li>1 tbsp nooch (nutritional yeast)</li><li>½ tsp garlic powder</li><li>½ tsp salt</li><li>1 tsp lemon juice or ACV</li><li>Black pepper</li></ul></div><div class="recipe-window-column"><h4>✿ Optional</h4><p>½ tsp mustard for “mac + cheese vibes”</p><h4>♡ Instructions</h4><p>Soak cashews in boiling water for 10 min. Blend and mix with rotini and broccoli.</p><h4>☆ Notes</h4><p class="recipe-highlight">Leftovers were great. Was a little salty—might dilute next time.</p></div></div>
+<p class="card-footnote">From my handwritten card, March 16, 2026. Pasta and broccoli quantities weren't specified.</p>
+<div class="back-card"><a href="lebrocski-back.jpg" target="_blank" rel="noopener" onclick="if(this.querySelector('img').hidden){event.preventDefault()}"><img src="lebrocski-back.jpg" alt="Original handwritten ingredients and cooking notes on the back of the recipe card" loading="lazy" hidden onload="this.hidden=false;this.parentElement.classList.add('has-original')" onerror="this.hidden=true"></a></div>
+</details>
+</article>
 <p class="recipe-box-foot">✧ More cards from the kitchen drawer coming soon ✧</p>
 </div></section><section class="about" id="about"><div class="wrap about-grid"><div><div class="note-label">A note from the kitchen</div><h2>Why frozen veggies?</h2><div class="margin-note">A very small obsession<br>with a very ordinary food.</div></div><div><p>I think eating more vegetables should be easy, affordable, and genuinely enjoyable.</p><p>Frozen vegetables last a long time and require almost no planning. But there's a difference between vegetables that are merely convenient and vegetables you're excited to eat.</p><p>I'm testing small changes and sharing what works, what doesn't, and what I'm still figuring out. Think of this as a public kitchen notebook. You're welcome to cook along.</p></div></div></section>
 </main>
