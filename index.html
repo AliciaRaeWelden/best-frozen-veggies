@@ -209,6 +209,12 @@ summary{font-size:.72rem;padding:3px 7px}
 .back-card a:not(.has-original){display:none}
 .back-card img{width:min(100% - 30px,570px);display:block;margin:5px auto 20px;border:1px solid #d9a4dc}
 @media(max-width:720px){.card-art-fallback{min-height:0;aspect-ratio:1.6/1}.handwriting{font-size:clamp(1.15rem,5.5vw,2rem)}.recipe-window-content{grid-template-columns:1fr;gap:5px;padding:12px}.recipe-window-column+.recipe-window-column{border-left:0;border-top:2px dotted #caa2dd;padding:8px 0 0}.recipe-window>summary{font-size:.88rem}}
+
+/* Display the actual reference artwork as an image; no simulated HTML art. */
+.original-card.mockup-front{padding:0;border:3px double #8735aa;background:#fff9f3;box-shadow:4px 5px 0 #d3a8e3;overflow:hidden}
+.original-card.mockup-front a{display:block;line-height:0}
+.original-card.mockup-front img{display:block;width:100%;height:auto;aspect-ratio:969/541;object-fit:contain}
+.recipe-window{margin-top:20px}
 </style>
 </head>
 <body>
@@ -248,13 +254,10 @@ summary{font-size:.72rem;padding:3px 7px}
 <div class="recipe-box-heading"><span aria-hidden="true">♡ ✧ ♡</span><h2>From the Recipe Box</h2><span aria-hidden="true">♡ ✧ ♡</span></div>
 <p class="recipe-box-intro">A collection of handwritten, sticker-covered recipes from my kitchen. A little messy, very real.</p>
 <article class="handmade-recipe">
-<div class="original-card">
-<a class="original-card-link" href="lebrocski-front.jpg" target="_blank" rel="noopener" aria-label="View the original handwritten LeBroc-ski recipe card larger" onclick="if(this.querySelector('img').hidden){event.preventDefault()}"><img src="lebrocski-front.jpg" alt="Original handwritten title card: The Big LeBroc-ski Cashew Alfredo, with purple swirls, multicolored dots, and playful animal stickers" loading="lazy" hidden onload="this.hidden=false;this.parentElement.classList.add('has-original')" onerror="this.hidden=true"></a>
-<div class="card-art-fallback" aria-label="Illustrated recreation of the handwritten card while the original photograph is being added">
-<svg class="swirl-art" viewBox="0 0 640 330" preserveAspectRatio="none" aria-hidden="true"><path d="M75 15 C-15 65 28 135 95 116 S265 85 295 70 S400 52 400 10 M210 285 C300 350 355 220 430 245 S570 300 610 140" fill="none" stroke="#a35baa" stroke-width="2.8"/><path d="M560 0 Q520 70 585 105 Q630 130 600 210" fill="none" stroke="#a35baa" stroke-width="2"/></svg>
-<div class="card-stickers"><span class="sticker pirate" aria-label="pirate dog sticker">🐕‍🦺</span><span class="sticker deer" aria-label="deer sticker">🦌</span><span class="sticker puffin" aria-label="puffin sticker">🐧</span></div>
-<div class="handwriting"><span>The Big</span><span>LeBroc-ski</span><span>Cashew Alfredo</span></div><div class="confetti" aria-hidden="true"></div>
-</div>
+<div class="original-card mockup-front">
+<a href="lebrocski-mockup-artwork.jpg" target="_blank" rel="noopener" aria-label="Open the illustrated LeBroc-ski recipe card from the original mockup">
+<img src="lebrocski-mockup-artwork.jpg" alt="The Big LeBroc-ski Cashew Alfredo: hand-lettered purple title, pirate dog, deer and puffin stickers, lavender swirls and colorful confetti dots" loading="lazy">
+</a>
 </div>
 <details class="recipe-window"><summary>♡ Recipe details <span aria-hidden="true">✧</span></summary>
 <div class="recipe-window-content"><div class="recipe-window-column"><h4>♡ Ingredients</h4><ul><li>½ cup raw cashews</li><li>¾ cup hot water (I used boiling)</li><li>1 tbsp nooch (nutritional yeast)</li><li>½ tsp garlic powder</li><li>½ tsp salt</li><li>1 tsp lemon juice or ACV</li><li>Black pepper</li></ul></div><div class="recipe-window-column"><h4>✿ Optional</h4><p>½ tsp mustard for “mac + cheese vibes”</p><h4>♡ Instructions</h4><p>Soak cashews in boiling water for 10 min. Blend and mix with rotini and broccoli.</p><h4>☆ Notes</h4><p class="recipe-highlight">Leftovers were great. Was a little salty—might dilute next time.</p></div></div>
