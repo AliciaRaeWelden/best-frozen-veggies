@@ -4,15 +4,15 @@
 
 ## Ingredients
 - About 12 oz frozen green beans
-- Jarred tomato pasta sauce, enough to coat the beans
-- A little olive oil
-- Garlic powder, optional
-- Salt to taste, if needed
+- ½ cup jarred tomato pasta sauce
+- 1 tsp olive oil
+- ¼ tsp garlic powder (optional)
+- Salt to taste
 
 ## Method
 1. Put the frozen green beans in a wide, dry skillet over medium heat. Cook uncovered, stirring occasionally, until the released water has mostly evaporated.
-2. Add a little olive oil and, if desired, garlic powder. Stir briefly.
-3. Add enough jarred tomato pasta sauce to coat the beans.
+2. Add 1 tsp olive oil and, if desired, ¼ tsp garlic powder. Stir briefly.
+3. Add ½ cup jarred tomato pasta sauce and stir to coat the beans.
 4. Simmer gently, stirring occasionally, until heated through and the beans are tender but still have some snap.
 5. Taste before adding salt, since jarred sauces are often already seasoned.
 
@@ -21,4 +21,4 @@ The green beans came out well, with a firm snap and a flavorful tomato coating. 
 
 **Why it works:** Evaporating the frozen beans' excess moisture before adding sauce helps keep the tomato sauce from becoming watery.
 
-**Next experiment:** Measure the sauce and oil and record the cooking time. Different frozen bean cuts and jarred sauces may need adjustments.
+**Next experiment:** Record the cooking time and compare different frozen bean cuts and jarred sauces. Different frozen bean cuts and jarred sauces may need adjustments.
