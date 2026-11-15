@@ -6,6 +6,7 @@ Simple, inexpensive ways to make ordinary frozen vegetables taste better — wit
 
 - [Skillet Corn with Paprika and Vinegar](recipes/skillet-corn.md)
 - [Pan-Browned Mixed Vegetables](recipes/pan-browned-mixed-vegetables.md)
+- [Green Beans in Jarred Tomato Sauce](recipes/green-beans-tomato-sauce.md)
 
 ## An open recipe notebook
 
